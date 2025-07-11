@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
 //   entry: './src/index.js',
@@ -26,13 +28,14 @@ output: {
         },
       },
     ],
-  }
-//   plugins: [
-//     new HtmlWebpackPlugin({
-//       template: './public/index.html',
-//     }),
-//   ],
-//   resolve: {
-//     extensions: ['.js', '.jsx'],
-//   },
+  },
+  
+  plugins: [
+     new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+  ],
+  // resolve: {
+  //   extensions: ['.js', '.jsx'],
+  // },
 };
