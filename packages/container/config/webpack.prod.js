@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { ModuleFederationPlugin } = require('webpack').container;
 const { merge } = require('webpack-merge');
 const commonConfig = require('./webpack.common.js');
